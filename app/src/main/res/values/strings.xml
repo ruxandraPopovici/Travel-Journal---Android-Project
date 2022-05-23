@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Travel Journal</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="about_us">About Us</string>
+    <string name="keep_in_touch">Keep In Touch</string>
+    <string name="contact">Contact</string>
+    <string name="share">Share</string>
+    <string name="action_settings">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="price">$$ -- Price</string>
+    <string name="single_click">"single click "</string>
+    <string name="favourite_trips">Favourite Trips</string>
+
+</resources>

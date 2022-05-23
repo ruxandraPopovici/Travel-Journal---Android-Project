@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="radio_text_size">18sp</dimen>
+    <dimen name="button_date_size">140dp</dimen>
+    <dimen name="heading_size">18sp</dimen>
+    <dimen name="info_size">21sp</dimen>
+</resources>

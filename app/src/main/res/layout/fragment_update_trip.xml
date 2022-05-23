@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.trip_crud.UpdateTripFragment">
+
+    <ImageView
+        android:id="@+id/update_trip_image"
+        android:layout_width="668dp"
+        android:layout_height="86dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/sun" />
+
+    <EditText
+        android:id="@+id/update_trip_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:hint="Trip's Name"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/update_trip_destination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:hint="Destination"
+        android:minHeight="48dp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="121dp"
+        android:layout_height="54dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10dp">
+
+        <Spinner
+            android:id="@+id/update_trip_type_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingStart="35dp"
+        android:paddingEnd="35dp">
+
+        <SeekBar
+            android:id="@+id/update_trip_price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:max="1000" />
+
+        <TextView
+            android:id="@+id/update_text_price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="@string/price" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/update_start_date_button"
+            android:layout_width="@dimen/button_date_size"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginEnd="10dp"
+            android:text="Start Date" />
+
+        <Button
+            android:id="@+id/update_end_date_button"
+            android:layout_width="@dimen/button_date_size"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginStart="10dp"
+            android:text="End Date" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <RatingBar
+        android:id="@+id/update_trip_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:numStars="5"
+        android:paddingTop="10dp"
+        android:stepSize="0.5"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/update_trip_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Update Your Trip" />
+
+</LinearLayout>

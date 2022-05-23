@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.project.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_addTripFragment"
+            app:destination="@id/addTripFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_updateTripFragment"
+            app:destination="@id/updateTripFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_viewTripFragment"
+            app:destination="@id/viewTripFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.project.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_fav_list"
+        android:name="com.example.project.ui.favourite_list.FavouriteListFragment"
+        android:label="Favourite Trips"
+        tools:layout="@layout/fragment_favourite_trips" />
+
+    <fragment
+        android:id="@+id/nav_about_us"
+        android:name="com.example.project.ui.about_us.AboutUsFragment"
+        android:label="About Us"
+        tools:layout="@layout/fragment_about_us" />
+
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.example.project.ui.contact.ContactFragment"
+        android:label="Contact"
+        tools:layout="@layout/fragment_contact" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.example.project.ui.share.ShareFragment"
+        android:label="Share"
+        tools:layout="@layout/fragment_share" />
+    <fragment
+        android:id="@+id/addTripFragment"
+        android:name="com.example.project.ui.trip_crud.AddTripFragment"
+        android:label="Add New Trip" >
+        <action
+            android:id="@+id/action_addTripFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateTripFragment"
+        android:name="com.example.project.ui.trip_crud.UpdateTripFragment"
+        android:label="Update Trip"
+        tools:layout="@layout/fragment_update_trip" >
+        <action
+            android:id="@+id/action_updateTripFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+        <argument
+            android:name="currentTrip"
+            app:argType="com.example.project.data.Trip" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewTripFragment"
+        android:name="com.example.project.ui.trip_crud.ViewTripFragment"
+        android:label="fragment_show_trip_info"
+        tools:layout="@layout/fragment_show_trip_info" >
+        <action
+            android:id="@+id/action_viewTripFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+</navigation>
